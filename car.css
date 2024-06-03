@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    padding: 20px;
+}
+
+/* Navbar Styles */
+.navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 10px;
+}
+
+.topimg {
+    text-align: center;
+}
+
+.topimg img {
+    width: 100%;
+    height: auto;
+}
+
+.topimg h1,
+.topimg p {
+    margin: 10px 0;
+}
+
+/* Section Styles */
+section {
+    margin: 20px 0;
+}
+
+/* Flexbox for New Launch Section */
+.newlanch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.newlanch > div {
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.newlanch img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Flexbox for Brands Section */
+.brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.brands .card {
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.brands img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Flexbox for Contact Section */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input,
+.contact button {
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Media Queries for Medium Screens (Tablets) */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-link {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .newlanch > div,
+    .brands .card {
+        flex: 1 1 45%;
+    }
+
+    .contact input,
+    .contact button {
+        width: 90%;
+    }
+}
+
+/* Media Queries for Small Screens (Mobile) */
+@media (max-width: 480px) {
+    .newlanch > div,
+    .brands .card {
+        flex: 1 1 90%;
+    }
+
+    .contact input,
+    .contact button {
+        width: 95%;
+    }
+}
+
+/* Media Queries for Large Screens (Laptops and Desktops) */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .newlanch {
+        justify-content: space-between;
+    }
+
+    .newlanch > div {
+        flex: 1 1 22%;
+    }
+
+    .brands {
+        justify-content: space-between;
+    }
+
+    .brands .card {
+        flex: 1 1 22%;
+    }
+
+    .contact input,
+    .contact button {
+        width: 60%;
+    }
+}
